@@ -1,6 +1,6 @@
 public class CompareConcatenation {
     public static void main(String[] args) {
-        int iterations = 1_000_000;
+        int iterations = 1000000;
         String text = "hello";
 
         // Measure time for StringBuffer
@@ -21,7 +21,7 @@ public class CompareConcatenation {
         long endTime2 = System.nanoTime();
         long durationBuilder = endTime2 - startTime2;
 
-        System.out.println("Time taken by StringBuffer: " + durationBuffer / 1_000_000 + " ms");
-        System.out.println("Time taken by StringBuilder: " + durationBuilder / 1_000_000 + " ms");
+        System.out.println("Time taken by StringBuffer: " + durationBuffer / 1000000 + " ms");
+        System.out.println("Time taken by StringBuilder: " + durationBuilder / 1000000 + " ms");
     }
 }
